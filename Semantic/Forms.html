@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            justify-content: center; align-items: center; background: white;
+            display: flex; 
+        }
+
+     .total-container {
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      max-width: 400px; background-color: skyblue; 
+      
+     }
+
+     .container{
+        margin: 16px;
+     }
+     .names{
+        padding: 10px;
+        margin: 10px;
+    }
+     
+          label{
+            display: block;
+            margin-bottom: 8px;
+          }
+          input[type ="text"],
+          input[type ="email"],
+          input[type ="password"],
+          input[type ="Date"]{
+            width: 100%;
+            padding: 10px;
+            border: 5px solid green; border-radius: 8px;
+
+          }
+          button{
+            background-color: lightgreen; padding: 10px; width: 100%; border-radius: 12px; border: none; font-size: medium;
+            margin-top: 10px;
+          }
+          button:hover{
+            background-color: green;
+            
+          }
+          .footer{
+            margin-top: 10px; text-align: center; font-size: 16px; font-style: normal;
+          }
+
+          .footer a{
+            color: blueviolet; text-decoration: none;
+          }
+          .footer a:hover{
+            text-decoration: underline;
+
+          }
+    </style>
+
+
+<body>
+    <div class="total-container">
+    <h3 style="text-align: center;">Student Registration form</h3>
+    <hr>
+    <form>
+        <div class="container">
+            <div class="names">
+                <label for="username"><b>Name:</b></label>
+                <input id="username" name="username" type="text" placeholder="Enter your Name">
+            </div>
+            <div class="names">
+                <label for="useremail"><b>Email:</b></label>
+                <input id="useremail" name="useremail" type="email" placeholder="Enter your email">
+            </div>
+            <div class="names">
+                <label for="userpassword"><b>Password:</b></label>
+                <input id="password" name="userpassword" type="password" placeholder="Enter your password">
+            </div>
+            <div class="names">
+                <label for="user DOB"><b>Date of Birth:</b></label>
+                <input id="DOB" name="user DOB" type="Date" placeholder="Enter your DOB">
+            </div>
+            <div class="names">
+                <label><b>Gender:</b></label>
+                <input id="Male" name="Gender" type="radio" />Male
+                <input id="Female" name="Gender" type="radio" />Female
+            </div>
+            <div class="names">
+                <label><b>Hobbies:</b></label>
+                <input id="hobby1" name="hobby" type="checkbox" />Music
+                <input id="hobby2" name="hobby" type="checkbox" />Sports
+                <input id="hobby3" name="hobby" type="checkbox" />Gardening
+            </div>
+            <div class="names">
+                <label><b>Country:</b></label>
+                <select style="width: 100%; padding: 10px;" id="country" name="country">
+                    <option>India</option>
+                    <option>US</option>
+                    <option>Canada</option>
+                </select>
+                </div>
+                    <div class="names">
+                        <label for="comments"><b>Comments:</b></label>
+                        <textarea style="width: 100%" rows="10" columns="10" id="comments" name="usercommnets" placeholder="Enter comments"></textarea>
+                    </div>
+                    <div>
+                        <button><b>Submit</b></button>
+                        <div class="footer">
+                        <span>If already submitted, please <a
+                                href="https://www.google.co.in/">Sign up</a></span>
+                                </div>
+                    </div>
+
+                </div>
+            </div>
+    </form>
+</div>
+</body>
+</head>
+
+</html>

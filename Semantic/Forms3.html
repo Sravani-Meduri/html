@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            border: 2px solid black;
+            margin: 10px; width: 100%;  text-align: center; max-width: 400px; 
+            padding: 32px; border-radius: 8px; background-color: lightgreen;
+            
+        }
+
+        body{
+         display: grid; align-items: center; justify-content: center; background-color: lightslategray;
+        }
+
+        button{
+            padding: 10px; border: 5px solid white; border-radius: 12px; background-color: green; color: white;
+        }
+        button:hover{
+            background-color: black;
+        }
+
+        label{
+            font-weight: bold; display: block; margin-bottom: 10px; text-align: left;
+        }
+        input[type= "text"],
+        input[type= "email"],
+        input[type="Date"]
+
+        {
+            width: 100%;  margin-bottom: 10px; padding: 10px; border: 1px solid blue;
+            border-radius: 8px;
+        }
+        form{
+            padding: 35px;
+        }
+        .form-items{
+            margin-top: 15px;
+        }
+
+
+        
+        </style>
+</head>
+
+<body>
+    <div class="container">
+    
+        <h2>Student Registration Form</h2>
+        <hr>
+        <form>
+            <div class="form-items">
+                <label for="username">Name:</label>
+                <input id="username" name="username" type="text" placeholder="Please enter your name">
+            </div>
+
+            <div class="form-items">
+                <label for="useremail">Email:</label>
+                <input id="useremail" name="useremail" type="email" placeholder="Please enter your email">
+            </div>
+
+            <div class="form-items">
+                <label for="DOB">Date of Birth:</label>
+                <input id="Date Of Birth" name="Date Of Birth" type="Date">
+            </div>
+
+            <div class="form-items">
+                <label for="Gender">Gender:</label>
+                <input id="Male" name="Gender" type="radio" />Male
+                <input id="Female" name="Gender" type="radio" />Female
+            </div>
+
+            <div class="form-items">
+                <label for="Hobbies">Hobbies:</label>
+                <input id="Hobby1" name="Hobby" type="checkbox" />Gardening
+                <input id="Hobby2" name="Hobby" type="checkbox" />Playing cricket
+                <input id="Hobby3" name="Hobby" type="checkbox" />Travelling
+            </div>
+
+            <div class="form-items">
+                <label for="country">Country:</label>
+                <select>
+                    <option>India</option>
+                    <option>England</option>
+                    <option>Bangladesh</option>
+                </select>
+            </div>
+
+            <div class="form-items">
+                <label for="comments"><b>Comments:</b></label>
+                        <textarea rows="10" columns="10" id="comments" name="usercommnets" placeholder="Enter comments"></textarea>
+            </div>
+
+            <div class="form-items">
+                <button>Submit</button>
+                <div class="footer">
+                <span>Already have account? Sign in using <a href="https://www.google.com/">Google</a></span>
+            </div>
+            </div>
+           
+        </form>
+        </div>
+    
+</body>
+</div>
+
+</html>

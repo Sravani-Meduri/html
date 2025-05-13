@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid System</title>
+        <style>
+            .block{
+                background-color: green; border: 5px solid yellow; height: 300px;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap:10px;
+            }
+            .grid-item{
+                background-color: aqua; color: black; border: 5px solid brown; text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="block">
+        <h2>Grid System</h2>
+        <div class="grid-container">
+        <div class="grid-item">column1</div>
+        <div class="grid-item">column2</div>
+        <div class="grid-item">column3</div>
+        </div>
+    </div>
+
+    </body>
+</html>
